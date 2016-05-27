@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+    <CUSTOMER ID="1" FIRST_NAME="Jack" LAST_NAME="Dou"/>
+    <CUSTOMER ID="2" FIRST_NAME="James" LAST_NAME="White"/>
+    <CUSTOMER ID="3" FIRST_NAME="Lina" LAST_NAME="Dou"/>
+</dataset>
