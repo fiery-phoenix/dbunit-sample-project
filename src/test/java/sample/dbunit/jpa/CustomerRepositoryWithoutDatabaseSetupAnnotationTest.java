@@ -36,7 +36,7 @@ import static org.hamcrest.core.IsNull.notNullValue;
 		DirtiesContextTestExecutionListener.class,
 		TransactionalTestExecutionListener.class,
 		DbUnitTestExecutionListener.class})
-public class CustomerRepositoryTestWithoutDatabaseSetupAnnotation {
+public class CustomerRepositoryWithoutDatabaseSetupAnnotationTest {
 
 	@Autowired
 	private DataSource dataSource;

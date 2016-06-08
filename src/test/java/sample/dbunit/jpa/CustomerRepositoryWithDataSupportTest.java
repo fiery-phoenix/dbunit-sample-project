@@ -38,7 +38,7 @@ import static sample.dbunit.jpa.utils.tables.Customers.LAST_NAME;
 		TransactionalTestExecutionListener.class,
 		DbUnitTestExecutionListener.class,
 		DbUnitConnectionSetter.class})
-public class CustomerRepositoryTestWithDataSupport {
+public class CustomerRepositoryWithDataSupportTest {
 
 	@Autowired
 	private CustomerRepository repository;
