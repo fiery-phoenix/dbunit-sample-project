@@ -3,7 +3,7 @@ package sample.dbunit.jpa.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "CUSTOMER")
+@Table(name = "CUSTOMERS")
 public class Customer {
 
 	@Id
