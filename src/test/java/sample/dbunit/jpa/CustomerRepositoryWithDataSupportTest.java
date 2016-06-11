@@ -2,7 +2,6 @@ package sample.dbunit.jpa;
 
 import com.github.springtestdbunit.DbUnitTestExecutionListener;
 import com.google.common.collect.Iterables;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,7 +43,6 @@ public class CustomerRepositoryWithDataSupportTest {
 	private CustomerRepository repository;
 
 	@Test
-	@Ignore
 	public void testContextLoads() throws Exception {
 		cleanInsert(table(SampleTables.CUSTOMERS).withRow(with(ID, 1), with(FIRST_NAME, "Fiery"), with(LAST_NAME, "Phoenix")));
 		Iterable<Customer> all = repository.findAll();

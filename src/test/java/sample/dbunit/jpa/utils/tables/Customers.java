@@ -15,4 +15,7 @@ public interface Customers {
 	Column FIRST_NAME = new Column("FIRST_NAME", VARCHAR);
 	Column LAST_NAME = new Column("LAST_NAME", VARCHAR);
 
+	static Column[] getColumns() {
+		return new Column[]{ID, FIRST_NAME, LAST_NAME};
+	}
 }
