@@ -20,7 +20,7 @@ import static org.dbunit.data.support.DbUnitAssertionUtils.assertIsEmpty;
 import static org.dbunit.data.support.DbUnitAssertionUtils.assertSize;
 import static org.dbunit.data.support.DbUnitDataUtils.clean;
 import static org.dbunit.data.support.DbUnitDataUtils.insert;
-import static org.dbunit.data.support.DbUnitDataUtils.table;
+import static org.dbunit.data.support.DbUnitDataUtils.row;
 import static org.dbunit.data.support.DbUnitDataUtils.with;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
@@ -53,7 +53,7 @@ public class CustomerRepositoryWithDataSupportTest {
 
     @Test
     public void testContextLoads() throws Exception {
-        insert(table(CUSTOMERS).withRow(with(ID, 1), with(FIRST_NAME, "Fiery"), with(LAST_NAME, "Phoenix")));
+        insert(CUSTOMERS, row(with(ID, 1), with(FIRST_NAME, "Fiery"), with(LAST_NAME, "Phoenix")));
         Iterable<Customer> all = repository.findAll();
         assertThat(all, is(notNullValue()));
         assertThat(Iterables.size(all), is(1));
