@@ -16,8 +16,8 @@ import org.springframework.test.context.transaction.TransactionalTestExecutionLi
 import sample.dbunit.jpa.utils.DbUnitConnectionSetter;
 import sample.dbunit.jpa.entities.Customer;
 
-import static org.dbunit.data.support.DbUnitAssertionUtils.assertIsEmpty;
-import static org.dbunit.data.support.DbUnitAssertionUtils.assertSize;
+import static org.dbunit.data.support.DbUnitAssertions.assertIsEmpty;
+import static org.dbunit.data.support.DbUnitAssertions.assertSize;
 import static org.dbunit.data.support.DbUnitDataUtils.clean;
 import static org.dbunit.data.support.DbUnitDataUtils.insert;
 import static org.dbunit.data.support.DbUnitDataUtils.row;
